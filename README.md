@@ -32,7 +32,7 @@ thop>=0.0.31
 ├── model.py                    # SSTF model and ablation variants
 ├── fbm_paper_components.py     # TFM components (Trend, Seasonal, Interaction)
 ├── clip_integration.py         # Frozen CLIP encoder and text projection
-├── gpt_text_generator.py       # GPT-OSS offline text generation (semantic anchors)
+├── gpt_text_generator.py       # GPT-OSS offline text generation
 ├── data.py                     # Data loading, windowing, train/val/test split
 ├── train.py                    # Training and validation loops
 ├── test.py                     # Evaluation and t-SNE visualization
@@ -43,29 +43,9 @@ thop>=0.0.31
 └── requirements.txt            # Python dependencies
 ```
 
-
-
 ## Usage
-
 ### Train the full SSTF model
-
 ```
 python main.py --model HybridFBM_LSTM_CNN_2D_Text_Dynamic_Contrastive
 ```
-
-### Key arguments
-
-| Argument        | Default                                          | Description            |
-| :-------------- | :----------------------------------------------- | :--------------------- |
-| `--model`       | `HybridFBM_LSTM_CNN_2D_Text_Dynamic_Contrastive` | Model to train         |
-| `--window_size` | 1200                                             | Window size in samples |
-| `--stride`      | 1200                                             | Window stride          |
-| `--batch_size`  | 64                                               | Training batch size    |
-| `--epochs`      | 50                                               | Number of epochs       |
-| `--lr`          | 0.0002                                           | Learning rate          |
-| `--dropout`     | 0.6                                              | Dropout rate           |
-| `--lstm_hidden` | 128                                              | LSTM hidden units      |
-| `--mlp_dim`     | 256                                              | MLP hidden units       |
-
-See `config.py` for all available arguments.
 
