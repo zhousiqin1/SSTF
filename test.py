@@ -1,5 +1,3 @@
-# test.py
-# Model evaluation and visualization utilities for the SSTF framework.
 import os
 import numpy as np
 import torch
