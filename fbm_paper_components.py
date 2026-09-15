@@ -1,4 +1,3 @@
-# fbm_paper_components.py
 # Time–Frequency Modeling (TFM) module components: Trend, Seasonal, Interaction.
 import torch
 import torch.nn as nn
