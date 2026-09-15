@@ -1,5 +1,3 @@
-# train.py
-# Training and validation loops for the SSTF framework.
 import time
 import numpy as np
 import torch
