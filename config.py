@@ -30,7 +30,6 @@ def parse_args():
 
     parser.add_argument('-data_batch_size', type=int, default=1024, help="Data processing batch size (for text generation and CLIP encoding)")
 
-
     parser.add_argument('-raw_input_size', type=int, default=3, help="Raw sensor input dimension (typically 3: x,y,z acceleration)")
     parser.add_argument('-text_feat_dim', type=int, default=32, help='Text feature dimension (after TextEmbedder reduction)')
     parser.add_argument('-output_size', type=int, default=3, help='Number of classification categories')
@@ -79,7 +78,6 @@ def parse_args():
 
     args = parser.parse_args()
     
-
     if not args.save_dir:
         base_dir = "results"
         if not os.path.exists(base_dir):
